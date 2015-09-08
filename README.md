@@ -1,21 +1,25 @@
 # salt-innd
 Salt formula for inn, the InterNetNews service.
 
-*Implementation choices:*
+**Implementation choices:**
 
 * It functions as a self-contained spooler/reader on a single server and tries
 to ensure best practice for a text feed.
 * The formula is specific to the FreeBSD packaging and only carries conf files
 which need to change.
-* tradspool and tradoverview because ZFS makes this childsplay on modern hardware.
+* tradspool and tradindexed overview because ZFS makes this childsplay on modern hardware.
 Check out csiph.com innreport to get an idea of volume for a text-only public
 Usenet service for Big-8.  I expect unlimited retention with current disk sizes.
 
+## Getting started
 For a private node, decide if you want to create local groups only, or if you
 want to set up suck to.  If local  groups only, delete actsync stuff.
 
 For a public Usenet service, you will need to arrange peering and edit the
 newsfeeds, innfeed.conf, and incoming.conf.
+
+Take a look at all the things in the files directory and edit them in accordance
+with man pages and the INN FAQ.
 
 ## init
 
