@@ -1,0 +1,11 @@
+##  $Id: actsync.ign 7664 2007-09-02 12:58:07Z iulius $
+
+##  Don't compare to.* groups as they will differ.
+i to.*
+
+##  We always want our special top level groups.
+i control
+i general
+i junk
+i test
+i to

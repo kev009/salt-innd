@@ -1,0 +1,24 @@
+# vim: set tabstop=4 shiftwidth=4 expandtab syntax=perl:
+
+sub local_config {
+    %config_local = (
+        statfile => '/usr/local/news/cleanfeed/cleanfeed.stats',
+        html_statfile => '/usr/local/news/http/cleanfeed.stats.html',
+        stats_interval => 600,
+        block_all_binaries => 1,
+        do_scoring_filter => 0,
+        do_emp_dump => 1,
+        emp_dump_file => '/usr/local/news/tmp/empdump',
+        md5_skips_followups => 0,
+        debug_batch_directory => '/var/log/cleanfeed',
+        PHNRateBaseInterval => 1800,
+        PHRRateBaseInterval => 1800,
+        maxgroups => 6,
+        low_xpost_maxgroups => 3,
+        low_xpost_groups => 'test|jobs|forsale',
+    );
+}
+
+print $now.$config_dir.$lines.%Restricted_Groups.%Moderated.%config_local.%config_append.@followups if 0; # lint food
+
+1;

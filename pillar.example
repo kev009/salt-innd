@@ -1,0 +1,4 @@
+inn:
+  # newsusers is a list of username and crypt passwords
+  newsusers: |
+      kev009:abc123
