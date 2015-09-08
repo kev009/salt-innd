@@ -13,7 +13,7 @@ Usenet service for Big-8.  I expect unlimited retention with current disk sizes.
 
 ## Getting started
 For a private node, decide if you want to create local groups only, or if you
-want to set up suck to.  If local  groups only, delete actsync stuff.
+want to set up suck to pull from a public server.  If local groups only, delete actsync stuff.
 
 For a public Usenet service, you will need to arrange peering and edit the
 newsfeeds, innfeed.conf, and incoming.conf.
