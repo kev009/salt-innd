@@ -21,6 +21,12 @@ newsfeeds, innfeed.conf, and incoming.conf.
 Take a look at all the things in the files directory and edit them in accordance
 with man pages and the INN FAQ.
 
+## NoCeM
+
+Out of the box NoCeM is enabled.  There's a gpg keyring that accepts
+http://rosalind.home.xs4all.nl/nocemreg/nocemreg.html, but a couple of these no
+longer work with GnuPG 2.1.
+
 ## init
 
 This is the main formula for setting up inn and associated tasks.

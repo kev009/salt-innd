@@ -125,8 +125,8 @@ inpaths!:*:Tc,WP:/usr/local/news/bin/ninpaths -p -d /var/log/news/path/inpaths.%
 # Feed NoCeM notices to perl-nocem in order to process third-party,
 # PGP-signed article cancellation notices.  See perl-nocem(8) for more
 # details on how to set this up.
-#nocem!:!*,alt.nocem.misc,news.lists.filters\
-#	:Tc,Wf,Ap:/usr/local/news/bin/perl-nocem
+nocem!:!*,alt.nocem.misc,news.lists.filters\
+	:Tc,Wf,Ap:/usr/local/news/bin/perl-nocem
 
 # News to mail gateway.  Similar to innfeed, this uses a master feed and
 # then individual feeds for every separate address that news is being
