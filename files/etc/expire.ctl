@@ -36,7 +36,6 @@
 ##  are based on the arrival time (unless -p is used).
 #*:A:1:15:never
 
-comp.*:A:1:never:never
 *:A:1:never:never
 
 ##  Keep for 1-15 days, allow Expires: headers to work.  This is an entry
