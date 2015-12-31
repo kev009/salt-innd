@@ -8,7 +8,6 @@ sub local_config {
         block_all_binaries => 1,
         block_late_cancels => 1,
         block_user_cancels => 1,
-        do_scoring_filter => 0,
         do_emp_dump => 1,
         emp_dump_file => '/usr/local/news/tmp/empdump',
         md5_skips_followups => 0,
